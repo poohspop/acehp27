@@ -6,14 +6,16 @@ The Universal Badge Generator allows event attendees to create custom social med
 
 ## Technical Requirements
 
-The system identifies a specific green shade to create transparent windows for headshots. Maintain these color standards in your template design.
+The system identifies a specific magenta shade to create transparent windows for headshots. Maintain these color standards in your template design.
 
 | Property | Value |
 |----------|-------|
-| Hexadecimal (HEX) | `#00b140` |
-| Red Green Blue (RGB) | `0, 177, 64` |
+| Hexadecimal (HEX) | `#FF00FF` |
+| Red Green Blue (RGB) | `255, 0, 255` |
 
 ---
+
+Color matching uses a low tolerance of 10% of the maximum RGB color distance (approximately 44.2 RGB units). Green artwork is preserved.
 
 ## Template Graphic Specifications
 
@@ -38,9 +40,9 @@ High-quality output depends on the source file. Follow these constraints for the
 
 ### Design Guidelines
 
-- Fill photo cutout areas with solid color `#00b140`.
-- Disable anti-aliasing on the edges of green shapes to ensure sharp cutouts.
-- Do not use chroma key green in logos, text, or border elements.
+- Fill photo cutout areas with solid color `#FF00FF`.
+- Disable anti-aliasing on the edges of magenta shapes to ensure sharp cutouts.
+- Do not use chroma key magenta in logos, text, or border elements.
 - Use a flattened image. The code generates transparency during processing.
 
 ---
